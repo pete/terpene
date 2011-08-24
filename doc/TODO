@@ -1,2 +1,4 @@
 * A lot of API functionality is unimplemented on the command-line
 * There are going to be changes in Nacreon that need to be reflected here.
+* Error handling is minimal at best right now.
+
