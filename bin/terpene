@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'terpene'
+require 'terpene/command'
+
+include Terpene::Command
+
+begin
+  run_cmd *parse_args(ARGV)
+rescue ParseError => e
+  $stderr.puts e.message
+  usage $stderr
+  exit 1
+rescue Terpene::AuthenticationError
+  $stderr.puts "Authentication error:  username or password invalid."
+  exit 2
+end

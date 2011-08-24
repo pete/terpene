@@ -1,0 +1,7 @@
+A client library for interacting with the Nacreon PaaS (see
+https://github.com/pete/nacreon).  It includes a command-line interface
+(currently limited) and a client.  It is (hopefully) written in such a way that
+it should function well as a reference implementation for clients in other
+languages, although the Nacreon API is not guaranteed to be stable.
+
+Terpene will be updated when Nacreon is; we're using it to develop.
